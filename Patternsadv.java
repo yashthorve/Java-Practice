@@ -13,21 +13,21 @@ public class Patternsadv {
     //     }
     // }
     //Inverted and rotated half pyramid
-    // public static void invhalfpyramid(int n){
-    //     for(int i=1;i<=n;i++){
+    public static void invhalfpyramid(int n){
+        for(int i=1;i<=n;i++){
 
-    //         //for space
-    //         for(int j=1;j<=n-i;j++){
-    //             System.out.print(" ");
+            //for space
+            for(int j=1;j<=n-i;j++){
+                System.out.print(" ");
 
-    //         }
-    //         //for star 
-    //         for(int j=1;j<=i;j++){
-    //             System.out.print("*");
-    //         }
-    //         System.out.println();
-    //     }
-    // }
+            }
+            //for star 
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
  //Inverted half pyramid with numbers
     //  public static void invertedwithnum(int n){
     //     for(int i=1;i<=n;i++){
@@ -42,25 +42,27 @@ public class Patternsadv {
     //         System.out.println();
     //     }
     // }
-public static void flyodtriangle(int n){
-    int counter=1;
-    for(int i=1;i<=n;i++){
-        for(int j=1;j<=i;j++){
-            System.err.print(counter+" ");
-            counter++;
-        }
-            System.out.println();
-    }
-}
+
+
+// public static void flyodtriangle(int n){
+//     int counter=1;
+//     for(int i=1;i<=n;i++){
+//         for(int j=1;j<=i;j++){
+//             System.err.print(counter+" ");
+//             counter++;
+//         }
+//             System.out.println();
+//     }
+// }
 
 
 
 
     public static void main(String[] args) {
-    //    hollowrectangle(10, 4); 
-        // invhalfpyramid(5);
+        // hollowrectangle(10, 4); 
+        invhalfpyramid(5);
         // invertedwithnum(5);
-        flyodtriangle(6);
+        // flyodtriangle(6);
 }
 
 
