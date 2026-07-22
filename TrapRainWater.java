@@ -3,7 +3,9 @@ class TrapRainWater{
 
 
     public static int Trap(int arr[]){
-       
+       if(arr.length<=2){
+        return 0;
+       }else{
         //Trapper water= min(left max ,right max)-height of current bar ,then add trapped water of each bar .
         int leftmax[]=new int[arr.length];
         leftmax[0]=arr[0];
@@ -27,7 +29,7 @@ class TrapRainWater{
             trappedwater+=waterlevel-arr[i];;
         }
         return trappedwater;
-
+    }
     }
 
 
